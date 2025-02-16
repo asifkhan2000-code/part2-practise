@@ -23,3 +23,19 @@ arr.forEach((num, index) => {
     }
 });
 console.log(indexes);
+console.log((123).toString().repeat(3))
+
+const numbers = [1, 5, 61, 5, 87, 7, 5, 81, 61];
+
+function noDuplicate(array) {
+    const unique = [];
+    for (const item of array) {
+        if (unique.includes(item) === false) { // Simplified condition
+            unique.push(item);
+        }
+    }
+    return unique;
+}
+
+const newArray = noDuplicate(numbers);
+console.log(newArray);
